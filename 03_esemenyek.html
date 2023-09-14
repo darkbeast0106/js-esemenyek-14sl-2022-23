@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript események</title>
+    <script src="03_main.js"></script>
+</head>
+<body onload="alert('Betöltődött az oldal')">
+    <main>
+        <button onclick="uzenetPirosra();">Kattints ide!</button>
+        <h2>Vidd rá az egered a villanykörtére</h2>
+        <img id="villanykorte" src="img/pic_bulboff.gif" alt="Villanykörte" 
+            onmouseenter="villanykorteFelkapcsol();" 
+            onmouseleave="villanykorteLekapcsol();"
+            onload="console.log('Betöltődött a kép');"
+            >
+        <br>
+        <input id="bevitel" type="text" placeholder="Írj be valamit" 
+            onfocus="bevitelFocus();"
+            onblur="bevitelBlur();"
+            oninput="bevitelInput();"
+            >
+        <p id="uzenet"></p>
+    </main>
+</body>
+</html>
